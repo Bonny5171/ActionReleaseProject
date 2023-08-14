@@ -10,7 +10,7 @@
     "deploy:full": "npm run build:subrepo && git add . && git commit -m uibuild && git push && npm run deploy",
     "logs:prod": "heroku logs --tail",
     "_postinstall": "npm install --prefix LOL_Dragoes && npm install --prefix LOL_Web",
-    "release": "release-it"
+    "release": "release-it --npm.skipChecks "
   },
   "repository": {
     "type": "git",
