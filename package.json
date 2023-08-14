@@ -1,11 +1,11 @@
 {
-  "name": "league_of_legends",
+  "name": "action_release_project",
   "version": "1.0.0",
   "description": "teste",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:subrepo": "rm -rf build && cd ../League_of_Legends && npm run build --prod && cp -r build ../LOL_Dragoes",
+    "build:subrepo": "rm -rf build && cd ../ActionReleaseProject && npm run build --prod && cp -r build ../LOL_Dragoes",
     "deploy": "git subtree push --prefix LOL_Dragoes heroku main",
     "deploy:full": "npm run build:subrepo && git add . && git commit -m uibuild && git push && npm run deploy",
     "logs:prod": "heroku logs --tail",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bonny5171/League_of_Legends.git"
+    "url": "git+https://github.com/Bonny5171/ActionReleaseProject.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bonny5171/League_of_Legends/issues"
+    "url": "https://github.com/Bonny5171/ActionReleaseProject/issues"
   },
-  "homepage": "https://github.com/Bonny5171/League_of_Legends#readme",
+  "homepage": "https://github.com/Bonny5171/ActionReleaseProject#readme",
   "dependencies": {
     "release-it": "^16.1.5"
   }
